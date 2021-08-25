@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+body{
+    background-color: hsla(0, 0%, 100%, 0.75);
+    color: white;
+    margin-top: 20%;
+    margin-left: 30px;
+}
+
+.main{
+    margin:20px 30px 30px 30px; 
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+p{
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*design sedan part */
+.sedan{
+    background:  hsl(31, 77%, 52%);
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    padding: 30px;
+    height: 350px;
+}
+.sedan .btnsedan{
+    border: 2px solid white;
+    align-self: flex-start;
+    border-radius: 50px;
+    font-weight: 100px;
+    background-color: white;
+    text-decoration: none;
+    color: hsl(31, 77%, 52%);
+    padding: 5px;
+    margin-bottom: 10%;
+}
+.sedan .btnsedan:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+/*SUV design */
+.suvs{
+    background-color:  hsl(184, 100%, 22%);
+    padding: 30px;
+}
+.suvs .btnsuvs{
+    border:2px solid white;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 50px;
+    color:  hsl(184, 100%, 22%);
+    padding: 5px;
+    margin-top: 10px;
+    
+    margin-bottom: 10%;
+}
+.suvs .btnsuvs:hover{
+    background-color:  hsl(184, 100%, 22%);
+    color: white;
+}
+/*LUXURY Design */
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    padding: 30px;
+}
+.luxury a{
+    border: 2px solid white;
+    background-color: white;
+    text-decoration: none;
+    color:  hsl(179, 100%, 13%);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+.luxury a:hover{
+    background-color:  hsl(179, 100%, 13%);
+    color: white;
+}
+@media screen and (max-width: 375px)
+{
+    .main{
+    flex-direction:column-reverse;
+    }
+    .luxury {
+        padding: 10px;
+        border-radius: 20px 20px 0px 0px;
+        padding: 30px;
+    }
+    .sedan{
+           
+            border-radius: 0px 0px 20px 20px;
+            padding: 30px;
+
+    }
+}
